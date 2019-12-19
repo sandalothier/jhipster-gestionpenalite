@@ -1,0 +1,48 @@
+{
+  "generator-jhipster": {
+    "applicationType": "microservice",
+    "gitCompany": "",
+    "baseName": "gestionpenalite",
+    "packageName": "com.fisc.gestionpenalite",
+    "packageFolder": "com/fisc/gestionpenalite",
+    "serverPort": 8115,
+    "serviceDiscoveryType": "eureka",
+    "authenticationType": "jwt",
+    "uaaBaseName": "../uaa",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": "elasticsearch",
+    "enableSwaggerCodegen": false,
+    "messageBroker": "kafka",
+    "buildTool": "maven",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "testFrameworks": [
+      "cucumber"
+    ],
+    "enableTranslation": true,
+    "nativeLanguage": "fr",
+    "languages": [
+      "en",
+      "fr"
+    ],
+    "clientFramework": "angularX",
+    "jhiPrefix": "jhi",
+    "jhipsterVersion": "6.5.1",
+    "jwtSecretKey": "N2ZmYzk4NjIzYTgyODg2ZjcyM2VkODBjOTcxMWNmOTY5OGM2NzE1M2IzMTViMDE3MzQ3Y2MzMDJlNzcyYjU3NjE3ZTAyNTI2NTZiYzA0YzI4MWU3OWM1Yzg2YjAyYzE2YWU3MGU4NjQ5MDU1Nzc2ZDA4N2M4Y2JlYTA5OTIyYjM=",
+    "embeddableLaunchScript": false,
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "blueprints": [],
+    "skipClient": true,
+    "skipUserManagement": true
+  },
+  "git-provider": "GitHub",
+  "git-company": "sandalothier",
+  "repository-name": "jhipster-gestionpenalite"
+}

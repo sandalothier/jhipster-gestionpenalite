@@ -1,0 +1,51 @@
+
+/** 
+ * AcompteExigible entity.
+ * @author sanda
+ * 
+ */
+entity IntitulePenalite {
+    intitule String
+    codePenalite String
+}
+/** 
+ * CalculPenalite entity.
+ * @author sanda
+ * 
+ */
+entity CalculPenalite {
+    datePenalite Date 
+}
+/**
+ * One to many relationship.
+ */
+relationship OneToMany {
+    IntitulePenalite to IntitulePenalite
+}
+/**
+ * One to many relationship.
+ */
+relationship OneToMany {
+    IntitulePenalite to FacteurCalcul
+}
+/**
+ * One to many relationship.
+ */
+relationship OneToMany {
+    IntitulePenalite to EnteteDeclaration
+}
+/**
+ * One to many relationship.
+ */
+relationship OneToMany {
+    IntitulePenalite to Reglement
+}
+// Set pagination options
+paginate TransactionCaisse with infinite-scroll
+paginate Paiement with pagination
+// Use Data Transfert Objects (DTO)
+// dto * with mapstruct
+// Set service options to all except few
+service all with serviceImpl except Contact, SiteWeb
+// Set an angular suffix
+// angularSuffix * with mySuffix
